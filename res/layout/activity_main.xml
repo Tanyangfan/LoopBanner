@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <com.mushi.banner.ExampleBannerView
+        android:id="@+id/id_banner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+    </com.mushi.banner.ExampleBannerView>
+    
+    <EditText
+        android:id="@+id/id_edt_banner_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入banner的页数"
+        android:inputType="number"
+        android:text="3" />
+    
+    <Button
+        android:id="@+id/id_btn_refresh_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="刷新banner" />
+
+</LinearLayout>
