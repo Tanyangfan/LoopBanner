@@ -30,8 +30,8 @@ public class ExampleBannerView extends BannerView {
 
     @Override
     protected void initConfig() {
-        // 设置总页数，一般为list.size(),此项必须设置
-        setPageNumber(3);
+        // 设置总页数，一般为list.size(),此项必须设置，如未设置，请在需要的地方调用refreshBanner
+        setPageNumber(0);
         // 设置启动页数，默认为0，不需要设置
         setStartItem(2);
         // 设置是否循环，默认不能循环拖动
